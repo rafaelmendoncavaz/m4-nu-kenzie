@@ -1,0 +1,40 @@
+%default {
+
+  padding: 13px 20px;
+
+  border: solid 2px transparent;
+  border-radius: 8px;
+  background-color: var(--color-primary);
+  color: #FFFFFF;
+
+  cursor: pointer;
+
+  &:hover {
+
+    background-color: var(--color-primary-2);
+    color: var(--color-gray-100);
+
+  }
+
+}
+
+.addBtn {
+
+  @extend %default;
+  font-size: 1.6rem;
+
+}
+
+.deleteBtn {
+
+  border: solid 2px transparent;
+  border-radius: 2px;
+  
+  background-color: var(--color-gray-200);
+  color: var(--color-gray-400);
+
+  font-size: 1rem;
+
+  cursor: pointer;
+
+}
