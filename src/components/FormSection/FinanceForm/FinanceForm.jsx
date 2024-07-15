@@ -1,10 +1,12 @@
 import { Input } from "../../Global/Input";
 import { Select } from "./Select";
 
+import style from "./style.module.scss";
+
 export function FinanceForm() {
 
   return (
-    <form>
+    <form className={`${style.formContent} flex-col`}>
       <Input 
       label="Descrição" 
       type="text" 
@@ -26,7 +28,7 @@ export function FinanceForm() {
       name="valuetype" 
       id="valuetype" 
       />
-      <button type="submit">
+      <button type="submit" className="addBtn">
         Inserir valor
       </button>
     </form>

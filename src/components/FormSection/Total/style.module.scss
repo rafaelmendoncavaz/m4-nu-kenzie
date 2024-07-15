@@ -1,0 +1,21 @@
+.totalContent {
+
+  border: solid 1px var(--color-gray-200);
+  display: flex;
+  padding: 3rem 2rem;
+  height: 100px;
+  width: 355px;
+  gap: 1.6rem;
+
+  display: flex;
+  flex-direction: column;
+
+  .totalBalance {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+}

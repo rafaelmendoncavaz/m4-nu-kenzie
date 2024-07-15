@@ -1,6 +1,7 @@
-%default {
+%defaultInput {
 
   padding: 0 16px;
+  height: 52px;
 
   border: solid 2px transparent;
   border-radius: 8px;
@@ -25,6 +26,6 @@
 
 .formInput {
 
-  @extend %default;
+  @extend %defaultInput;
 
 }

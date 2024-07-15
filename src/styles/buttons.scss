@@ -1,4 +1,4 @@
-%default {
+%defaultBtn {
 
   padding: 13px 20px;
 
@@ -20,7 +20,7 @@
 
 .addBtn {
 
-  @extend %default;
+  @extend %defaultBtn;
   font-size: 1.6rem;
 
 }

@@ -1,8 +1,11 @@
 import { FinanceList } from "./FinanceList/FinanceList";
+import style from "./style.module.scss";
 
 export function FinanceSection() {
 
   return (
-    <FinanceList />
+    <div className={style.financeContent}>
+      <FinanceList />
+    </div>
   );
 }

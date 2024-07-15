@@ -1,0 +1,28 @@
+.formContent {
+
+  border: solid 1px var(--color-gray-300);
+  display: flex;
+  padding: 3rem 2rem;
+  height: 450px;
+  width: 355px;
+  gap: 1.6rem;
+
+}
+
+.selectContent {
+
+  display: flex;
+  gap: 1rem;
+
+  .valueType {
+
+    padding: 0 16px;
+    height: 48px;
+  
+    border: solid 2px transparent;
+    border-radius: 8px;
+    background-color: var(--color-gray-100);
+
+  }
+
+}
