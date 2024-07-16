@@ -4,3 +4,9 @@
   gap: 1.6rem;
   
 }
+
+@media (max-width: 768px) {
+  .formSectionContent {
+    width: 90%;
+  }
+}

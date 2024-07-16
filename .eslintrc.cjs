@@ -6,11 +6,12 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
+    'plugin:jsx-ally/recommended',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
   settings: { react: { version: '18.2' } },
-  plugins: ['react-refresh'],
+  plugins: ['react-refresh', 'jsx-ally'],
   rules: {
     'react/jsx-no-target-blank': 'off',
     'react-refresh/only-export-components': [
@@ -71,6 +72,13 @@ module.exports = {
       "error",
       {
         allowAllPropertiesOnSameLine: false
+      }
+    ],
+    "react/jsx-max-props-per-line": [
+      "errror",
+      {
+        when: "always",
+        maximum: 1
       }
     ]
   },

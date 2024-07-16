@@ -13,7 +13,12 @@
 
   width: 4px;
   height: 100%;
-  background-color: var(--color-secondary);
+  &.Entrada {
+    background-color: var(--color-secondary);
+  }
+  &.Despesa {
+    background-color: var(--color-gray-200);
+  }
 
 }
 

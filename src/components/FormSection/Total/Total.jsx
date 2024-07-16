@@ -1,6 +1,6 @@
 import style from "./style.module.scss";
 
-export function Total() {
+export function Total({ resumeList }) {
 
   return (
     <div className={`${style.totalContent} `}>
@@ -9,7 +9,9 @@ export function Total() {
           Valor Total:
         </h2>
         <span className="title3 primary">
-          R$ 8.184,00
+          {
+            resumeList.reduce((acc, curr) => acc + curr.value, 0).toLocaleString("pt-BR", { style: "currency", "currency": "BRL" })
+          }
         </span>
       </div>
       <span className="body black">
