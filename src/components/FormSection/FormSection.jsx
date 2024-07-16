@@ -16,7 +16,9 @@ export function FormSection({ titleValue, ammountValue, typeValue, setTitleValue
        setTypeValue={setTypeValue}
        insertValue={insertValue}
        />
-      <Total resumeList={resumeList} />
+      {
+        resumeList.length > 0 && <Total resumeList={resumeList} />
+      }
     </div>
   );
 }
